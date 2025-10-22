@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+canvas {
+    display: block;
+    /* background-color: #333; */ /* This will be controlled by Three.js now */
+    background: #283747; /* Dark blue-grey road color */
+}
+
+#start-screen, #game-over-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#ui-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#bombs-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#bombs {
+    display: flex;
+}
+
+#powerup-timer {
+    margin-top: 10px;
+    font-size: 1em;
+    background-color: rgba(255, 215, 0, 0.8);
+    color: #111;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#game-over-screen button {
+    margin: 5px;
+}
+
+#replay-view {
+    width: 90vw;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.replay-container-class {
+    margin: 20px auto;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#replay-container {
+    /* Styles for the dynamically created player will be applied via JS.
+       This is a fallback or can be removed if not needed. */
+}
